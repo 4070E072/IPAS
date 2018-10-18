@@ -1,0 +1,15 @@
+Layer-1:Physical
+不安全的協定:telnet(23) ftp(20/21) http(80) DNS(53)
+安全的協定: ssh(22) sftp(22?) https(443) DNSsec()
+
+Layer-2:Data link
+
+Layer-3:network
+
+Layer-4:Transport
+
+Layer-5:session
+
+Layer-6:Presentation
+
+Layer-7:Application

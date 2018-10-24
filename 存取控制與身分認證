@@ -17,5 +17,13 @@
 窺視 (shoulder surfing):偷看別人密碼
 未經授權之資料探勘 (unauthorized data mining):偷看沒有權限的機密文件
 電子訊號外洩 (emanation):使用電子儀器竊聽
-物件重用 (object reuse):
-資料剩磁 (data remanence):
+物件重用 (object reuse):東西被一直用
+資料剩磁 (data remanence):會被還原
+
+
+資料存取控制
+強制存取控制 (mandatory access control, MAC):限制自己或別人存取或對物件執行的權限
+任意存取控制 (discretionary access control, DAC)比較沒那麼嚴格限制自己或別人存取或對物件執行的權限
+存取控制目錄 (access control list, ACL):查看使用者是否具有存取權
+規則基準存取控制 (rule-based access control):賦予角色權限(非使用者)
+

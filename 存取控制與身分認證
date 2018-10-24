@@ -23,7 +23,8 @@
 
 資料存取控制
 強制存取控制 (mandatory access control, MAC):限制自己或別人存取或對物件執行的權限
-任意存取控制 (discretionary access control, DAC)比較沒那麼嚴格限制自己或別人存取或對物件執行的權限
+任意存取控制 (discretionary access control, DAC):比較沒那麼嚴格限制自己或別人存取或對物件執行的權限
 存取控制目錄 (access control list, ACL):查看使用者是否具有存取權
-規則基準存取控制 (rule-based access control):賦予角色權限(非使用者)
+規則基準存取控制 (rule-based access control):條列主體對每個物件的存取權限
+角色基準存取控制 (role-based access control):賦予角色權限(非使用者)
 

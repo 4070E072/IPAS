@@ -1,4 +1,4 @@
-import tensorflow as tf
+# 範例程式import tensorflow as tf
 from tensorflow import keras
 
 # Helper libraries
@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 print(tf.__version__)
 
-
+# 範例程式
 # -*- coding: UTF-8 -*-
  
 # Filename : test.py
@@ -23,15 +23,18 @@ sum = float(num1) + float(num2)
 # 显示计算结果
 print('数字 {0} 和 {1} 相加结果为： {2}'.format(num1, num2, sum))
 
-
+# 範例程式
 import os
 
+# 範例程式
 os.listdir(".")
 
 import os
 
+# 範例程式
 os.listdir("..")
 
 import os
-​
+
+# 範例程式
 os.listdir("../bin")

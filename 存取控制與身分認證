@@ -1,0 +1,21 @@
+存取控制的類別
+預防性:預防
+偵測性:偵測
+指導性:分析指引
+嚇阻性:嚇止
+復原性:資料還原
+
+
+存取控制的威脅
+拒絕服務 (denial of service):發送一堆封包造成網路阻塞
+緩衝區溢位 (buffer overflow):記憶體緩衝區範圍錯誤 造成程式崩潰還會遭修改內容
+惡意程式 (malware):病毒
+密碼破解 (password cracker):密碼被破解
+欺騙 (spoofing):利用社交欺騙
+中間監看 (sniffer):監聽
+垃圾搜尋 (dumpster diving):從垃圾桶裡找機密文件
+窺視 (shoulder surfing):偷看別人密碼
+未經授權之資料探勘 (unauthorized data mining):偷看沒有權限的機密文件
+電子訊號外洩 (emanation):使用電子儀器竊聽
+物件重用 (object reuse):
+資料剩磁 (data remanence):

@@ -103,4 +103,5 @@
         5有些變更需求較為明顯，例如公司全面導入ERP，自然要為這個新系統更新緊急應變計畫。但有些變更需求要重做業務衝擊分析 (BIA) 才會被發現
 
    # RAID
+        RAID 0 consists of striping, but no mirroring or parity.
 

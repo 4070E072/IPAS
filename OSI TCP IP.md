@@ -2,12 +2,55 @@
 ### 實體層確保原始的資料可在各種物理媒體上傳輸，它用來定義網路裝置之間的位元資料傳輸，也就是在電線或其他物理線材上，傳遞0與1電子訊號，形成網路
 ```
 硬體:集線器（Hub）、網路線、網路卡
+
+攻擊方式:
+1.搭接線路(網路與電話)進行訊號竊聽
+2.私接線路變成隱匿通道(非控管中的線路)
+防護建議:
+1.機房、機櫃、線路室及管道間進行存取控管
+2.採用不同顏色區隔不同網段(安全區域)
+3.定期的線路盤查
 ```
 ## Layer-2:Data link layer(資料連結層)
 ### 資料連結層介於實體層與網路層之間，主要是在網路之間建立邏輯連結，並且在傳輸過程中處理流量控制及錯誤偵測，讓資料傳送與接收更穩定
 ```
 TCP/IP:（Asynchronous Transfer Mode，ATM）、點對點協定（Point-to-Point Protocol，PPP）
 硬體: 網路交換器(Switch)
+
+一.
+  攻擊手法:
+    透過工具或軟體被動蒐集Collision Domain中的網路封包
+  
+     監聽工具:
+              1.Sniffer
+              2.MailSnarf
+              3.URLSnarf
+              4.WebSpy
+              5.Tcpdump
+              6.Windump
+              7.Wireshark(Ethereal)
+              8.Ettercap
+              9.NetIntercept
+
+      防護建議:
+              1.採用加密連線(最佳方法)
+              2.改用Switch
+              3.網路線路的實體存取控制，避免搭接或私接問題
+二.
+ARP Spoofing
+              -又稱為ARP flooding、ARP poisoning或ARP Poison Routing
+              -在Broadcast Domain下無法被動監聽其他電腦間連線封包
+              -ARP Spoofing攻擊強迫偽冒其他IP，讓攻擊者有機會監測到其他電腦間的通訊
+        
+      攻擊手法:
+              1.攻擊者使用ARP Broadcast封包告訴其他電腦，192.168.1.1的MAC是Attacker的MAC
+              2其他電腦要傳送給192.168.1.1的封包會被送到Attacker
+              3.Attacker將封包錄下後轉送到真正的192.168.1.1
+ 
+      防護建議:
+              1.強制使用靜態ARP Table(小型網路)
+              2.採用VLAN縮小Broadcast Domain的範圍
+              3.啟用Switch中的Port、MAC及IP的對應控管
 ```
 ## Layer-3:network layer(網路層)
 ### 網路層定義網路路由及定址功能，讓資料能夠在網路間傳遞

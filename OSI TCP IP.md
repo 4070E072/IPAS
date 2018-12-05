@@ -42,6 +42,9 @@
               3.網路線路的實體存取控制，避免搭接或私接問題
 二.
 ARP Spoofing
+
+  ARP Spoofing:是指攻擊者取得區域網路上的資料封包甚至篡改封包，可讓網路上特定電腦或所有電腦無法正常連線
+
               -又稱為ARP flooding、ARP poisoning或ARP Poison Routing
               -在Broadcast Domain下無法被動監聽其他電腦間連線封包
               -ARP Spoofing攻擊強迫偽冒其他IP，讓攻擊者有機會監測到其他電腦間的通訊
@@ -55,6 +58,10 @@ ARP Spoofing
               1.強制使用靜態ARP Table(小型網路)
               2.採用VLAN縮小Broadcast Domain的範圍
               3.啟用Switch中的Port、MAC及IP的對應控管
+______________________________________________________________________________________________________
+與ARP Spoofing 相似的攻擊-IP Spoofing
+  
+  IP Spoofing:使用偽造的來源位址來傳送IP封包，可能會採用受信任來源的IP 位址來嘗試規避防火牆
 ```
 ## Layer-3:network layer(網路層)
 ### 網路層定義網路路由及定址功能，讓資料能夠在網路間傳遞

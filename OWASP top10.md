@@ -1,6 +1,8 @@
 # OWASP top 10
+## OWASP（The Open Web Application Security Project ，開放網路應用程式安全專案）
 ```
-1.Injection: 使用資料庫的特殊語言來破解帳號與密碼
+1.Injection: Injection 發生，通常是使用者提供的資料傳輸到interpreter， 被當成指令或是查詢。
+  攻擊者就能用惡意的資料欺騙 interpreter，達到執行指令或竄改資料目的
 
 例如:
 $str = "SELECT * FROM Users WHERE Username='“.$user."' and Password=‘”.$pass."'“;

@@ -1,1 +1,13 @@
+# OWASP top 10
+```
+1.Injection: 使用資料庫的特殊語言來破解帳號與密碼
 
+例如:
+$str = "SELECT * FROM Users WHERE Username='“.$user."' and Password=‘”.$pass."'“;
+
+如果說$user以及$pass變數沒有做保護，駭客只要輸入「’ or ‘‘=’」字串，就會變成以下：
+
+$str = “SELECT * FROM Users WHERE Username='' or ''='' and Password= '' or ‘’=‘’”; 
+
+這樣就會直接顯示資料庫的內容
+```

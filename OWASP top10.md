@@ -23,7 +23,7 @@
         4.完整插入完成攻擊程序 
 ```　
    防護建議：
-```
+```   
         1.使用Prepared Statements，例如Java PreparedStatement()，.NET SqlCommand(), OleDbCommand()，PHP PDO bindParam()
         2.使用Stored Procedures
        3.嚴密的檢查所有輸入值
@@ -37,4 +37,4 @@
    1.攻擊者透過錯誤的使用者應用程式身份認證和會話管理功能，破解密碼、Session Token，或利用其它開發漏洞，暫時性或永久性冒充用戶身份。
    
    2.許多應用程式經常需要處理身分認證及Session管理，但導入方式若不正確，反而可能會讓駭客取得密碼、金鑰、Session令牌，或者是利用其他導入時的錯誤疏失，      暫時或永久取得使用者的身份資訊。
-```
+
